@@ -106,8 +106,6 @@
 </style>
 
 <script>
-// 請先確保已安裝 anime.js，例如：npm install animejs
-import anime from 'animejs/lib/anime.es.js';
 
 export default {
   mounted() {
