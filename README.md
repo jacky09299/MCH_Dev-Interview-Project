@@ -49,20 +49,23 @@
    git push
    ```
 
-6. 前往設定頁面開啟 GitHub Pages，並選擇部署的分支為 `gh-pages`。
-![img4](https://github.com/user-attachments/assets/9bba9357-bec1-4768-8fe8-fb759619ff9c)
+6. 在首頁頂部選擇 `GitHub Action`，選擇 `I understand my workflows, go ahead and enable them`。
+![img4](https://github.com/user-attachments/assets/820a9d9b-6421-4dab-abbd-54a8ca18f00a)
 
-7. 點擊首頁右側 About 區域旁的設定，勾選 `Use your GitHub Pages website`，然後打開網站確認所有內容是否正常顯示。
-![img5](https://github.com/user-attachments/assets/381e8098-b5a1-4a07-b5ba-732f4730fafa)
+7. 前往設定頁面開啟 GitHub Pages，並選擇部署的分支為 `gh-pages`。
+![img5](https://github.com/user-attachments/assets/9bba9357-bec1-4768-8fe8-fb759619ff9c)
 
-8. 在首頁頂部選擇 `Pull requests`，建立新的請求並提交。
-![img6](https://github.com/user-attachments/assets/159c587b-f4a1-4425-97a1-65d90906fdbc)
+8. 點擊首頁右側 About 區域旁的設定，勾選 `Use your GitHub Pages website`，然後打開網站確認所有內容是否正常顯示。
+![img6](https://github.com/user-attachments/assets/381e8098-b5a1-4a07-b5ba-732f4730fafa)
+
+9. 在首頁頂部選擇 `Pull requests`，建立新的請求並提交。
+![img7](https://github.com/user-attachments/assets/159c587b-f4a1-4425-97a1-65d90906fdbc)
 
 ## 注意事項
 1. 請不要攻擊我們的 server，這邊都有做流量監控，你把它打下來不會加分，還會害別人沒後端可以寫網頁 QwQ。
 2. 我們沒有限制使用大型 LLM 模型，若有使用的話要盡量理解其產生的內容，我們可能會在面試中詢問相關基礎問題。
 3. 如果 GitHub Actions 顯示失敗，可以先確認 `Workflow permissions` 是否設定為 `Read and write permissions`。
-![img7](https://github.com/user-attachments/assets/ec1c5dc0-a686-4a5f-b59f-f455033df7c4)
+![img8](https://github.com/user-attachments/assets/ec1c5dc0-a686-4a5f-b59f-f455033df7c4)
 
 ## 一些有用的東東
 
