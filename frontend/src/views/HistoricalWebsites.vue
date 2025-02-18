@@ -11,9 +11,9 @@
         <div class="website-info">
           <h3>{{ website.name }}</h3>
           <p>{{ website.description }}</p>
-          <a :href="website.link" target="_blank" class="view-button"
-            >查看網站</a
-          >
+          <a :href="website.link" target="_blank" class="view-button">
+            查看網站
+          </a>
         </div>
       </div>
     </div>
@@ -21,7 +21,32 @@
 </template>
 
 <script>
-// TODO: Fetch websites data from API
+import axios from "axios";
+
+export default {
+  name: "HistoricalWebsites",
+  data() {
+    return {
+      websites: []
+    };
+  },
+  created() {
+    this.fetchWebsites();
+  },
+  methods: {
+    async fetchWebsites() {
+      try {
+        // 根據 OpenAPI 文件，取得網站資料的 endpoint 為 /api/websites
+        const response = await axios.get("https://mch-dev.userwei.com/api/websites");
+        // 後端回傳的是一個 Website 物件的陣列，
+        // 資料結構參考 OpenAPI 中的 components.schemas.Website
+        this.websites = response.data;
+      } catch (error) {
+        console.error("取得網站資料失敗：", error);
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -39,7 +64,21 @@
 }
 
 .websites-grid {
-  /* TODO: Add styles for a responsive grid layout */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .websites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .websites-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .website-card {
