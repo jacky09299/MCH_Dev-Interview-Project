@@ -183,7 +183,10 @@ export default {
         });
       }
     }
-
+    // 設定靜止的初始波浪狀態
+    wave1.setAttribute('d', generateWavePath(10, 200, 0, 150));
+    wave2.setAttribute('d', generateWavePath(8, 180, 0, 160));
+    wave3.setAttribute('d', generateWavePath(6, 160, 0, 170));
     // 滑鼠移入時啟動或繼續動畫
     header.addEventListener('mouseenter', startAnimation);
 
